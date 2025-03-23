@@ -1,0 +1,113 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container1{
+        background-color: white;
+        height: 90vh;
+        width: fit-content;
+        border: 0.5px solid gray;
+        
+        form{
+            padding: 20px 20px;
+            height: 90vh;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            .form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+                gap: 16px;
+                .inp{
+                    position: relative;
+                    width: 100%;
+                    input{
+                        width: 100%;
+                        padding: 12px;
+                        border: 0.5px solid gray;
+                        border-radius: 8px;
+                    }
+                    label{
+                        position: absolute;
+                        left: 12px;
+                        top: -9px;
+                        background-color: white;
+                        padding: 2px;
+                        font-size: small;
+                        font-weight: bold;
+                        color: #8850FD;
+                    }
+                }
+                .rdio{
+                    display: flex;
+                    flex-direction: column;
+                    gap : 5px;
+                    span{
+                        margin-right: 8px;
+                        font-size: small;
+                    }
+                    label{
+                        font-size: small;
+                        font-weight: bold;
+                        color: #404448;
+                    }
+                }
+            
+            }
+            .button{
+                width: 100%;
+                button{
+                    width: 100%;
+                    padding: 12px;
+                    font-weight: bold;
+                    background-color: #6C25FF;
+                    color: white;
+                    border: none;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1050px) {
+    .container{
+        .container1{
+            border: none;
+            form{
+                .form{
+                    gap : 20px;
+                    .inp{
+                        input{
+                            padding: 16px;
+                        }
+                        label{
+                            font-size: medium;
+                        }
+                    }
+                    .rdio{
+                        input, span{
+                            font-size: medium;
+                        }
+                        label{
+                            font-size: medium;
+                        }
+                    }
+                }
+
+                .button{
+                    button{
+                        padding: 16px;
+                        font-size: medium;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
